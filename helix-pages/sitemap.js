@@ -2,13 +2,17 @@ const fs = require('fs');
 const path = require('path');
 
 const urls = [
-  { 
-    loc: 'https://main--aem-eds--pradeepmoolemane.aem.page/', 
-    lastmod: '2023-10-01', changefreq: 'daily', priority: 1.0 
+  {
+    loc: 'https://main--aem-eds--pradeepmoolemane.aem.page/',
+    lastmod: '2023-10-01',
+    changefreq: 'daily',
+    priority: 1.0
   },
   { 
     loc: 'https://main--aem-eds--pradeepmoolemane.aem.page/about',
-    lastmod: '2023-10-01', changefreq: 'monthly', priority: 0.8
+    lastmod: '2023-10-01',
+    changefreq: 'monthly',
+    priority: 0.8
   }
 ];
 
@@ -31,4 +35,3 @@ const sitemap = generateSitemap(urls);
 const sitemapPath = path.join(__dirname, 'sitemap.xml');
 
 fs.writeFileSync(sitemapPath, sitemap, 'utf8');
-console.log(`Sitemap generated at ${sitemapPath}`);
