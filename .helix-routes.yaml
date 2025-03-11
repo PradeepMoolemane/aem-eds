@@ -1,0 +1,8 @@
+# .helix-routes.yaml
+version: 1
+
+# Route for the sitemap
+/sitemap.xml:
+  url: https://main--aem-eds--pradeepmoolemane.aem.page/sitemap.xml
+  headers:
+    Content-Type: application/xml
