@@ -1,6 +1,10 @@
 # .helix-routes.yaml
 version: 1
 
+static:
+  headers:
+    cache=control: "max-age=120, public"
+
 # Route for the sitemap
 /sitemap.xml:
   url: https://main--aem-eds--pradeepmoolemane.aem.page/sitemap.xml
