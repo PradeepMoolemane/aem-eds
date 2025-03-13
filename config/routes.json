@@ -1,0 +1,11 @@
+{
+    "version":1,
+    "include":[
+        {
+            "url":"/**",
+            "headers":{
+                "Cache-Control":"max-age=120,public"
+            }
+        }
+    ]
+}
