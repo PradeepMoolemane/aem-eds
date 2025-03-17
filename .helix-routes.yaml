@@ -3,7 +3,7 @@ version: 1
 
 static:
   headers:
-    cache=control: "max-age=120, public"
+    cache-control: "max-age=120, public"
 
 # Route for the sitemap
 /sitemap.xml:
